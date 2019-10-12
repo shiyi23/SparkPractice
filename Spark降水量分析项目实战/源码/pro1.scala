@@ -2,7 +2,7 @@
 //注意：这里我的数据是放在自己的本地电脑上的，所以textFile的读入路径是本地路径，
 // 但是如果数据是放在HDFS上的话，读入路径要变成相应的hdfs路径
 
-//==>下面的pre_data实质上是一个rdd
+//==>下面的pre_data实质上是一个rdd，即通过SparkContext基于外部数据源创建了一个rdd赋值给pre_data
 val pre_data = sc.textFile("/home/huang/ComputerApplying/SparkWorkSpace/f20674.dat")
 
 
